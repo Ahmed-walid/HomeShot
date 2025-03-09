@@ -2,7 +2,9 @@ const puppeteer = require('puppeteer');
 
 async function takeScreenshot(url, filename) {
   // Launch the browser
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  });
   
   // Create a new page
   const page = await browser.newPage();
@@ -18,6 +20,6 @@ async function takeScreenshot(url, filename) {
 }
 
 // Usage example: Take a screenshot of a webpage
-takeScreenshot('https://www.youtube.com', 'example-screenshot.png')
+takeScreenshot('https://ahmed-walid.github.io/HomeShot/', 'screenshot.png')
   .then(() => console.log('Screenshot taken!'))
   .catch((err) => console.error('Error:', err));
