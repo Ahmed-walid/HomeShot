@@ -22,4 +22,5 @@ jobs:
 
       - name: screenshot
         run: |
+          npm install puppeteer
           node take-screenshot.js
