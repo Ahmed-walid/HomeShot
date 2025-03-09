@@ -18,6 +18,6 @@ async function takeScreenshot(url, filename) {
 }
 
 // Usage example: Take a screenshot of a webpage
-takeScreenshot('http://localhost:3000/', 'example-screenshot.png')
+takeScreenshot('https://www.youtube.com', 'example-screenshot.png')
   .then(() => console.log('Screenshot taken!'))
   .catch((err) => console.error('Error:', err));
