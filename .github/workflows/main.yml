@@ -43,7 +43,9 @@ jobs:
             xdg-utils
 
       - name: Install dependencies with npm
-        run: npm install
+        run: |
+          npm install
+          npm install puppeteer
 
       - name: Run screenshot script
         run: node take-screenshot.js
