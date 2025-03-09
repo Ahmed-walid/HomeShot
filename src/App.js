@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          HomeShot Side Project v2.0
+          HomeShot Side Project v3.0
         </a>
       </header>
     </div>
